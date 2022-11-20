@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0" />
+    <PackageReference Include="Moq" Version="4.18.2" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+    <PackageReference Include="Serilog" Version="2.12.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+    <PackageReference Include="Unity" Version="5.11.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BeerData\BeerinventoryApi.Data.csproj" />
+    <ProjectReference Include="..\BeerInventiryLogger\BeerInventoryApi.Logger.csproj" />
+    <ProjectReference Include="..\BeerInventoryApi.Utility\BeerInventoryApi.Utility.csproj" />
+    <ProjectReference Include="..\BeerInventoryHelper\BeerInventoryApi.Helper.csproj" />
+    <ProjectReference Include="..\BeerInventoryServices\BeerInventoryApi.Services.csproj" />
+  </ItemGroup>
+
+</Project>

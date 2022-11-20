@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerInventoryAPI", "BeerInventoryAPI\BeerInventoryAPI.csproj", "{C95511D7-5ADE-468F-BDEE-3A22460D9958}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerInventoryApi.Services", "BeerInventoryServices\BeerInventoryApi.Services.csproj", "{BD750667-F663-4A76-B970-E3C4F1A45781}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerinventoryApi.Data", "BeerData\BeerinventoryApi.Data.csproj", "{31A7FB76-6521-4F96-A933-EF0F324BD3A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerInventoryApi.Helper", "BeerInventoryHelper\BeerInventoryApi.Helper.csproj", "{0E35AD03-52B2-41DF-BD1E-08C3C4CA3907}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerInventoryApi.Logger", "BeerInventiryLogger\BeerInventoryApi.Logger.csproj", "{A1F6EF2C-C7A3-414F-BE7E-FE14BF9CA5FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerInventoryApi.Test", "BeerInventoryApi.Test\BeerInventoryApi.Test.csproj", "{922FA3E1-EE5D-4D2F-960A-6C7E16462A21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerInventoryApi.Utility", "BeerInventoryApi.Utility\BeerInventoryApi.Utility.csproj", "{B94015CD-1D91-4A33-A0F2-2F885F8577C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C95511D7-5ADE-468F-BDEE-3A22460D9958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C95511D7-5ADE-468F-BDEE-3A22460D9958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C95511D7-5ADE-468F-BDEE-3A22460D9958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C95511D7-5ADE-468F-BDEE-3A22460D9958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD750667-F663-4A76-B970-E3C4F1A45781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD750667-F663-4A76-B970-E3C4F1A45781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD750667-F663-4A76-B970-E3C4F1A45781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD750667-F663-4A76-B970-E3C4F1A45781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31A7FB76-6521-4F96-A933-EF0F324BD3A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A7FB76-6521-4F96-A933-EF0F324BD3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A7FB76-6521-4F96-A933-EF0F324BD3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A7FB76-6521-4F96-A933-EF0F324BD3A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E35AD03-52B2-41DF-BD1E-08C3C4CA3907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E35AD03-52B2-41DF-BD1E-08C3C4CA3907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E35AD03-52B2-41DF-BD1E-08C3C4CA3907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E35AD03-52B2-41DF-BD1E-08C3C4CA3907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F6EF2C-C7A3-414F-BE7E-FE14BF9CA5FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F6EF2C-C7A3-414F-BE7E-FE14BF9CA5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F6EF2C-C7A3-414F-BE7E-FE14BF9CA5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F6EF2C-C7A3-414F-BE7E-FE14BF9CA5FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922FA3E1-EE5D-4D2F-960A-6C7E16462A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922FA3E1-EE5D-4D2F-960A-6C7E16462A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922FA3E1-EE5D-4D2F-960A-6C7E16462A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922FA3E1-EE5D-4D2F-960A-6C7E16462A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94015CD-1D91-4A33-A0F2-2F885F8577C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94015CD-1D91-4A33-A0F2-2F885F8577C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94015CD-1D91-4A33-A0F2-2F885F8577C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94015CD-1D91-4A33-A0F2-2F885F8577C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CBE4602-9F04-419D-98DC-B834C5D56E47}
+	EndGlobalSection
+EndGlobal
