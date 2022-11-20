@@ -38,7 +38,7 @@ namespace BeerInventoryAPI.Controllers
             {
                 List<IResultBeer> resultBeer = _servicesFactory.GetService(TypeOfResult.ExpensiveCheap).GetResultBeer(new string[] { url });
                 if (resultBeer == null || resultBeer.Count == 0)
-                    return new JsonResult(NotFound());
+                    return new JsonResult(NotFound().ToString() + "  :No beers found with maximum and minimum price");
 
                 LogService.LogInfo(className, "ReturnMaxMinPricedBeer", "Successfully calculated Most expensive and cheap beer");
 
@@ -62,7 +62,7 @@ namespace BeerInventoryAPI.Controllers
             {
                 List<IResultBeer> resultBeer = _servicesFactory.GetService(TypeOfResult.MostBottles).GetResultBeer(new string[] { url });
                 if (resultBeer == null || resultBeer.Count == 0)
-                    return new JsonResult(NotFound().ToString());
+                    return new JsonResult(NotFound().ToString() + "  :No beers found with price most bottles");
 
                 LogService.LogInfo(className, "ReturnMostBottlesBeer", "Successfully calculated Most bottles beer");
 
@@ -86,7 +86,7 @@ namespace BeerInventoryAPI.Controllers
             {
                 List<IResultBeer> resultBeer = _servicesFactory.GetService(TypeOfResult.ExactPriced).GetResultBeer(new string[] { url, price.ToString() });
                 if (resultBeer == null || resultBeer.Count == 0)
-                   return new JsonResult(NotFound().ToString() + "  Please check your log for exact problem.");
+                   return new JsonResult(NotFound().ToString() + $"  :Not beers found with price {price}");
 
                 LogService.LogInfo(className, "ReturnExactPricedBeer", $"Successfully calculated beer with price {price}");
 
@@ -111,7 +111,7 @@ namespace BeerInventoryAPI.Controllers
             {
                 List<IResultBeer> resultBeer = _servicesFactory.GetService(TypeOfResult.All).GetResultBeer(new string[] { url, price.ToString() });
                 if (resultBeer == null || resultBeer.Count == 0)
-                    return new JsonResult(NotFound());
+                    return new JsonResult(NotFound().ToString() + "  :No beers found for all functions");
                 LogService.LogInfo(className, "ReturnAllFunctions", $"Successfully calculated all functionalitites");
 
                 return new JsonResult(Ok(resultBeer));
